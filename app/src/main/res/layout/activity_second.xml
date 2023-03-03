@@ -22,6 +22,7 @@
                     android:text="Health and Nutrition"
                     android:textColor="@color/white"
                     android:layout_marginLeft="2dp"
+                    android:textStyle="normal"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:textSize="16sp">
