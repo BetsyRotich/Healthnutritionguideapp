@@ -21,6 +21,7 @@
                     android:layout_height="wrap_content"
                     android:text="Health and Nutrition"
                     android:textColor="@color/white"
+                    android:layout_marginLeft="2dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:textSize="16sp">
@@ -30,6 +31,6 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
-   
+
 
 </RelativeLayout>
