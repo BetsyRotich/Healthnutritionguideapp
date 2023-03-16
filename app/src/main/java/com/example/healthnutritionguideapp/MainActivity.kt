@@ -1,5 +1,4 @@
 package com.example.healthnutritionguideapp
-
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -72,3 +71,4 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+

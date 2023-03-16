@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "75612499133",
+    "project_id": "healthnutritionguideapp",
+    "storage_bucket": "healthnutritionguideapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75612499133:android:0d2fb1aa136675465c5bd4",
+        "android_client_info": {
+          "package_name": "com.example.healthnutritionguideapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75612499133-8rk4is66l5ahjl7v7rfij1dgcrutdmlr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXFNcxbJk3IKsjfDo0hXOocJIA1LSDyrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75612499133-8rk4is66l5ahjl7v7rfij1dgcrutdmlr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
