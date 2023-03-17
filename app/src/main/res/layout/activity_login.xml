@@ -50,7 +50,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilEmail"
-            style="@style/AppTheme.InputField"
+            style="Healthnutritionguideapp/AppTheme.InputField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_one"
@@ -69,7 +69,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilPassword"
-            style="@style/AppTheme.InputField"
+            style="Healthnutritionguideapp/AppTheme.InputField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tilEmail"
@@ -111,7 +111,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/ic_remathree"
+            android:background="@drawable/ic_remthree"
             android:text="Login"
             android:textAllCaps="false"
             android:textSize="16sp"
