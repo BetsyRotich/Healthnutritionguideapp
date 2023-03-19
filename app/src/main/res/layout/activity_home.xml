@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Choose here;"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/diabetesType1Image"
+        android:layout_width="176dp"
+        android:layout_height="354dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_diabetes_type_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Diabetes Type 1"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="150dp"
+        android:textStyle="normal"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/diabetesType2Image"
+        android:layout_width="176dp"
+        android:layout_height="354dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/todo"
+        android:orientation="horizontal"
+        android:src="@drawable/ic_diabetes_type_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/diabetes_type_2"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="350dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="-194dp"
+        tools:layout_editor_absoluteY="164dp" />
+    <ImageView
+        android:id="@+id/bloodpressureImage"
+        android:layout_width="176dp"
+        android:layout_height="354dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="350dp"
+        android:contentDescription="@string/todo"
+        android:orientation="horizontal"
+        android:src="@drawable/ic_bloodpressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="blood_pressure"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="500dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="-194dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <ImageView
+        android:id="@+id/healthylivingImage"
+        android:layout_width="176dp"
+        android:layout_height="354dp"
+        android:layout_marginTop="480dp"
+        android:contentDescription="@string/todo"
+        android:orientation="horizontal"
+        android:src="@drawable/ic_healthyliving"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Healthy living"
+        android:autoLink="web"
+        android:onClick="clickhere"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="630dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-194dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
