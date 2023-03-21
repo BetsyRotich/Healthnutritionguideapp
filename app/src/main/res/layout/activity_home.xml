@@ -14,7 +14,7 @@
         android:textColor="@color/black"/>
 
     <ImageView
-        android:id="@+id/diabetesType1Image"
+        android:id="@+id/_0_best_foods_to_control_diabetes_blood_sugarImage"
         android:layout_width="176dp"
         android:layout_height="354dp"
         android:orientation="horizontal"
@@ -22,7 +22,7 @@
         android:layout_marginTop="5dp"
         android:layout_weight="1"
         android:contentDescription="@string/todo"
-        android:src="@drawable/ic_diabetes_type_1"
+        android:src="@drawable/_0_best_foods_to_control_diabetes_blood_sugar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
@@ -36,14 +36,14 @@
         android:textColor="@color/black"/>
 
     <ImageView
-        android:id="@+id/diabetesType2Image"
+        android:id="@+id/keto_shrimp_healthy_eating_dinner_1296x728_header_1_1200x628Image"
         android:layout_width="176dp"
         android:layout_height="354dp"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:contentDescription="@string/todo"
         android:orientation="horizontal"
-        android:src="@drawable/ic_diabetes_type_2"
+        android:src="@drawable/keto_shrimp_healthy_eating_dinner_1296x728_header_1_1200x628"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,22 +51,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/diabetes_type_2"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="300dp"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="normal"
         tools:layout_editor_absoluteX="-194dp"
         tools:layout_editor_absoluteY="164dp" />
     <ImageView
-        android:id="@+id/bloodpressureImage"
+        android:id="@+id/how_to_reduce_blood_pressure_getty_creativeImage"
         android:layout_width="176dp"
         android:layout_height="354dp"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         android:contentDescription="@string/todo"
         android:orientation="horizontal"
-        android:src="@drawable/ic_bloodpressure"
+        android:src="@drawable/how_to_reduce_blood_pressure_getty_creative"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
@@ -74,7 +74,7 @@
         android:layout_height="match_parent"
         android:text="blood_pressure"
         android:layout_marginLeft="190dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="460dp"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="normal"
@@ -82,13 +82,13 @@
         tools:layout_editor_absoluteY="164dp" />
 
     <ImageView
-        android:id="@+id/healthylivingImage"
+        android:id="@+id/foundation_layersImage"
         android:layout_width="176dp"
         android:layout_height="354dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="450dp"
         android:contentDescription="@string/todo"
         android:orientation="horizontal"
-        android:src="@drawable/ic_healthyliving"
+        android:src="@drawable/foundation_layers"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,7 +99,7 @@
         android:autoLink="web"
         android:onClick="clickhere"
         android:layout_marginLeft="190dp"
-        android:layout_marginTop="630dp"
+        android:layout_marginTop="600dp"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="normal"
