@@ -97,4 +97,9 @@ class EmailPasswordActivity : Activity() {
     companion object {
         private const val TAG = "EmailPassword"
     }
+    private fun signOut() {
+        // [START auth_sign_out]
+        Firebase.auth.signOut()
+        // [END auth_sign_out]
+    }
 }
