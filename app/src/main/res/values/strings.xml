@@ -6,5 +6,8 @@
     <string name="facebook_app_id">1234</string>
     <string name="fb_login_protocol_scheme">abcd</string>
     <string name="facebook_client_token">5678</string>
+    <string name="todo">TODO</string>
+    <string name="diabetes_type_1" />
+    <string name="diabetes_type_2">Diabetes Type 2</string>
 
 </resources>

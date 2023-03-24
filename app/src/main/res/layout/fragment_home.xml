@@ -48,6 +48,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:tint="@color/white" />
 
+
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/card.badge"
                     android:layout_width="wrap_content"
@@ -69,6 +70,7 @@
                         android:text="42"
                         android:textColor="@android:color/white"
                         android:textSize="7sp" />
+
                 </com.google.android.material.card.MaterialCardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
