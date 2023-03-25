@@ -15,6 +15,7 @@
         android:minHeight="?attr/actionBarSize"
         app:layout_collapseMode="pin">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -93,6 +94,108 @@
             android:textStyle="bold">
 
         </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please choose here;"
+            android:layout_marginTop="70dp"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/_0_best_foods_to_control_diabetes_blood_sugarImage"
+            android:layout_width="176dp"
+            android:layout_height="354dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/_0_best_foods_to_control_diabetes_blood_sugar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Diabetes Type 1"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="150dp"
+            android:textStyle="normal"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/keto_shrimp_healthy_eating_dinner_1296x728_header_1_1200x628Image"
+            android:layout_width="176dp"
+            android:layout_height="354dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="150dp"
+            android:contentDescription="@string/todo"
+            android:orientation="horizontal"
+            android:src="@drawable/keto_shrimp_healthy_eating_dinner_1296x728_header_1_1200x628"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/diabetes_type_2"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="300dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            tools:layout_editor_absoluteX="-194dp"
+            tools:layout_editor_absoluteY="164dp" />
+        <ImageView
+            android:id="@+id/how_to_reduce_blood_pressure_getty_creativeImage"
+            android:layout_width="176dp"
+            android:layout_height="354dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="300dp"
+            android:contentDescription="@string/todo"
+            android:orientation="horizontal"
+            android:src="@drawable/how_to_reduce_blood_pressure_getty_creative"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="blood_pressure"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="460dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            tools:layout_editor_absoluteX="-194dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <ImageView
+            android:id="@+id/foundation_layersImage"
+            android:layout_width="176dp"
+            android:layout_height="354dp"
+            android:layout_marginTop="550dp"
+            android:contentDescription="@string/todo"
+            android:orientation="horizontal"
+            android:src="@drawable/foundation_layers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Healthy living"
+            android:autoLink="web"
+            android:onClick="clickhere"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="600dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="-194dp" />
+
+
 
     </RelativeLayout>
 
