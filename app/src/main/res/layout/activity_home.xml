@@ -1,39 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Choose here;"
-        android:layout_marginTop="20dp"
-        android:textStyle="normal"
+        android:textColor="@color/black"
         android:textSize="18sp"
-        android:textColor="@color/black"/>
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="33dp" />
 
     <ImageView
-        android:id="@+id/_0_best_foods_to_control_diabetes_blood_sugarImage"
+        android:id="@+id/best_foods_to_control_diabetes_blood_sugarImage"
         android:layout_width="176dp"
         android:layout_height="354dp"
-        android:orientation="horizontal"
         android:layout_marginStart="1dp"
         android:layout_marginTop="5dp"
         android:layout_weight="1"
         android:contentDescription="@string/todo"
-        android:src="@drawable/_0_best_foods_to_control_diabetes_blood_sugar"
+        android:orientation="horizontal"
+        android:src="@drawable/best_foods_to_control_diabetes_blood_sugar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Diabetes Type 1"
         android:layout_marginLeft="190dp"
         android:layout_marginTop="150dp"
-        android:textStyle="normal"
+        android:text="Diabetes Type 1"
+        android:textColor="@color/black"
         android:textSize="25sp"
-        android:textColor="@color/black"/>
+        android:textStyle="normal" />
 
     <ImageView
         android:id="@+id/keto_shrimp_healthy_eating_dinner_1296x728_header_1_1200x628Image"
@@ -50,14 +53,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/diabetes_type_2"
         android:layout_marginStart="190dp"
         android:layout_marginTop="300dp"
+        android:text="@string/diabetes_type_2"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="normal"
         tools:layout_editor_absoluteX="-194dp"
         tools:layout_editor_absoluteY="164dp" />
+
     <ImageView
         android:id="@+id/how_to_reduce_blood_pressure_getty_creativeImage"
         android:layout_width="176dp"
@@ -69,12 +73,13 @@
         android:src="@drawable/how_to_reduce_blood_pressure_getty_creative"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="blood_pressure"
         android:layout_marginLeft="190dp"
         android:layout_marginTop="460dp"
+        android:text="blood_pressure"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="normal"
@@ -85,7 +90,8 @@
         android:id="@+id/foundation_layersImage"
         android:layout_width="176dp"
         android:layout_height="354dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="448dp"
         android:contentDescription="@string/todo"
         android:orientation="horizontal"
         android:src="@drawable/foundation_layers"
@@ -95,18 +101,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Healthy living"
-        android:autoLink="web"
-        android:onClick="clickhere"
         android:layout_marginLeft="190dp"
         android:layout_marginTop="600dp"
+        android:autoLink="web"
+        android:onClick="clickhere"
+        android:text="Healthy living"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-194dp" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
