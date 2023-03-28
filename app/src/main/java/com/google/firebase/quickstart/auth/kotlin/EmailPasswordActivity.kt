@@ -102,4 +102,8 @@ class EmailPasswordActivity : Activity() {
         Firebase.auth.signOut()
         // [END auth_sign_out]
     }
+
+    
+
+
 }
