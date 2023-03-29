@@ -1,10 +1,10 @@
 package com.example.healthnutritionguideapp
-
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
+import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.core.view.View
 import com.google.firebase.quickstart.auth.kotlin.MainActivity
@@ -20,13 +20,15 @@ class LoginActivity : AppCompatActivity() {
         // Initialize Firebase authentication
         auth = FirebaseAuth.getInstance()
 
+        val loginButton = findViewById<Button>(R.id.btnSignIn)
+
         // Set up click listener for login button
         loginButton.setOnClickListener {
-            val email = emailEditText.text.toString()
-            val password = passwordEditText.text.toString()
+            val emailLayout : TextInputLayout= findViewById( R.id.tilEmail)
+            val passwordLayout : TextInputLayout = findViewById( R.id.tilPassword)
 
             // Authenticate user with Firebase
-            auth.signInWithEmailAndPassword(email, password)
+            auth.signInWithEmailAndPassword(emailLayout.toString(), passwordLayout.toString())
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         // User authenticated successfully, redirect to home activity
@@ -41,8 +43,8 @@ class LoginActivity : AppCompatActivity() {
     }
 }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    fun onCreate(savedInstanceState: Bundle?) {
+        onCreate(savedInstanceState)
 
         // Set the content view to the login layout
         setContentView(R.layout.activity_login)
@@ -65,10 +67,18 @@ private fun isLoggedIn(): Boolean {
 
     private fun startHomeActivity() {
         // Start the home activity
-        val intent = Intent(this, MainActivity.HomeActivity::class.java)
+        val intent = Intent( MainActivity.HomeActivity::class.java)
         startActivity(intent)
         finish()
     }
+
+fun Intent(activityClass: Class<MainActivity.HomeActivity>): Intent {
+    TODO("Not yet implemented")
+}
+
+fun startActivity(intent: Intent) {
+    TODO("Not yet implemented")
+}
 
 fun finish() {
     TODO("Not yet implemented")
@@ -80,3 +90,4 @@ fun finish() {
         // If the login is successful, call the startHomeActivity() function
         startHomeActivity()
     }
+

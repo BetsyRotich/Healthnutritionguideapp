@@ -31,7 +31,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyCXFNcxbJk3IKsjfDo0hXOocJIA1LSDyrA" />
 
 
 
@@ -43,7 +43,7 @@
             android:exported="true"/>
 
         <activity
-            android:name="LoginActivity"
+            android:name=".SignupActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,6 +52,9 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"/>
 
         <activity android:name=".FirebaseUIActivity" />
     </application>
