@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="imageView" type="id" />
+    <item name="breakfast_button" type="id" />
+    <item name="lunch_button" type="id" />
+    <item name="supper_button" type="id" />
+    <item name="DiabetesType1" type="id" />
+    <item name="DiabetesType2" type="id" />
+    <item name="BloodPressure" type="id" />
 </resources>

@@ -14,7 +14,7 @@
         android:textColor="@color/black"/>
 
     <ImageView
-        android:id="@+id/_0_best_foods_to_control_diabetes_blood_sugarImage"
+        android:id="@+id/best_foods_to_control_diabetes_blood_sugarImage"
         android:layout_width="176dp"
         android:layout_height="354dp"
         android:orientation="horizontal"
@@ -22,7 +22,7 @@
         android:layout_marginTop="5dp"
         android:layout_weight="1"
         android:contentDescription="@string/todo"
-        android:src="@drawable/_0_best_foods_to_control_diabetes_blood_sugar"
+        android:src="@drawable/best_foods_to_control_diabetes_blood_sugar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
