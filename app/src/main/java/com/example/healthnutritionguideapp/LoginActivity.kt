@@ -1,93 +1,67 @@
 package com.example.healthnutritionguideapp
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.core.view.View
-import com.google.firebase.quickstart.auth.kotlin.MainActivity
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var loginButton: Button
+    private lateinit var emailInput: EditText
+    private lateinit var passwordInput: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
         // Initialize Firebase authentication
-        auth = FirebaseAuth.getInstance()
+        auth = Firebase.auth
+        emailInput = findViewById(R.id.etEmail)
+        passwordInput = findViewById(R.id.etPassword)
 
-        val loginButton = findViewById<Button>(R.id.btnSignIn)
+        loginButton = findViewById(R.id.btnSignIn)
 
         // Set up click listener for login button
         loginButton.setOnClickListener {
-            val emailLayout : TextInputLayout= findViewById( R.id.tilEmail)
-            val passwordLayout : TextInputLayout = findViewById( R.id.tilPassword)
+            val email = emailInput.text.toString().trim()
+            val password = passwordInput.text.toString().trim()
 
             // Authenticate user with Firebase
-            auth.signInWithEmailAndPassword(emailLayout.toString(), passwordLayout.toString())
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        // User authenticated successfully, redirect to home activity
-                        startActivity(Intent(this, MainActivity.HomeActivity::class.java))
-                        finish()
-                    } else {
-                        // Authentication failed, show error message
-                        Toast.makeText(this, "Authentication failed.", Toast.LENGTH_SHORT).show()
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                auth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            // Sign in success, update UI with the signed-in user's information
+                       Log.d(TAG, "createUserWithEmail:success")
+                       val user = auth.currentUser
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                            finish()
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "createUserWithEmail:failure", task.exception)
+                            Toast.makeText(
+                                baseContext, "Authentication failed.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
                     }
-                }
+            } else {
+                Toast.makeText(
+                    this,
+                    "Email and password fields cannot be empty",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 }
-
-    fun onCreate(savedInstanceState: Bundle?) {
-        onCreate(savedInstanceState)
-
-        // Set the content view to the login layout
-        setContentView(R.layout.activity_login)
-
-        // Check if the user is already logged in
-        if (isLoggedIn()) {
-            startHomeActivity()
-        }
-    }
-
-fun setContentView(activityLogin: Int) {
-    TODO("Not yet implemented")
-}
-
-private fun isLoggedIn(): Boolean {
-        // Check if the user is already logged in
-        // You can implement your own logic to check if the user is logged in
-        return false
-    }
-
-    private fun startHomeActivity() {
-        // Start the home activity
-        val intent = Intent( MainActivity.HomeActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
-
-fun Intent(activityClass: Class<MainActivity.HomeActivity>): Intent {
-    TODO("Not yet implemented")
-}
-
-fun startActivity(intent: Intent) {
-    TODO("Not yet implemented")
-}
-
-fun finish() {
-    TODO("Not yet implemented")
-}
-
-// Handle the login button click event
-    fun onLoginButtonClick(view: View) {
-        // Implement your login logic here
-        // If the login is successful, call the startHomeActivity() function
-        startHomeActivity()
-    }
-

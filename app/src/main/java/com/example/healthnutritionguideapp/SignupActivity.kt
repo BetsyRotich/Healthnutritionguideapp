@@ -1,15 +1,16 @@
 package com.example.healthnutritionguideapp
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 
 class SignupActivity : AppCompatActivity() {
-    private lateinit var firebaseAuth: FirebaseAuth
-
     private lateinit var emailInput: EditText
     private lateinit var firstNameInput: EditText
     private lateinit var lastNameInput: EditText
@@ -21,15 +22,13 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var passwordInputLayout: TextInputLayout
     private lateinit var confirmPasswordInputLayout: TextInputLayout
     private lateinit var signUpButton: Button
-
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_signup)
-
-        firebaseAuth = FirebaseAuth.getInstance()
-
-        emailInput = findViewById(R.id.etEmaill)
+        auth = FirebaseAuth.getInstance()
+        emailInput = findViewById(R.id.etEmail)
         firstNameInput = findViewById(R.id.etfullname)
         lastNameInput = findViewById(R.id.etPasswordd)
         passwordInput = findViewById(R.id.etPassworddtwo)
@@ -47,12 +46,7 @@ class SignupActivity : AppCompatActivity() {
             val lastName = lastNameInput.text.toString().trim()
             val password = passwordInput.text.toString().trim()
             val confirmPassword = confirmPasswordInput.text.toString().trim()
-            val loginButton = findViewById<Button>(R.id.btnlogin)
 
-            loginButton.setOnClickListener {
-                val intent = Intent(this, LoginActivity::class.java)
-                startActivity(intent)
-            }
 
             if (email.isEmpty()) {
                 emailInputLayout.error = "Email is required"
@@ -89,8 +83,41 @@ class SignupActivity : AppCompatActivity() {
             } else {
                 confirmPasswordInputLayout.error = null
             }
-                // Perform signup logic here...
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                auth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            // Sign in success, update UI with the signed-in user's information
+//                        Log.d(TAG, "createUserWithEmail:success")
+//                        val user = auth.currentUser
+                            val intent = Intent(this, LoginActivity::class.java)
+                            startActivity(intent)
+                            finish()
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "createUserWithEmail:failure", task.exception)
+                            Toast.makeText(
+                                baseContext, "Authentication failed.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+                    }
+            } else {
+                Toast.makeText(
+                    this,
+                    "Email and password fields cannot be empty",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+            val loginButton = findViewById<Button>(R.id.btnlogin)
+
+            loginButton.setOnClickListener {
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
             }
         }
     }
+}
+
 
