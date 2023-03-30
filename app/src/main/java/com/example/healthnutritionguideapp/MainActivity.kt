@@ -1,5 +1,4 @@
 package com.example.healthnutritionguideapp
-import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +6,6 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.FragmentTransaction
 import com.example.healthnutritionguideapp.fragments.DiscoverFragment
-import com.example.healthnutritionguideapp.fragments.HomeFragment
 import com.example.healthnutritionguideapp.fragments.NotificationsFragment
 import com.example.healthnutritionguideapp.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView

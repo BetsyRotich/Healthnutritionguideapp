@@ -7,4 +7,5 @@
     <item name="DiabetesType1" type="id" />
     <item name="DiabetesType2" type="id" />
     <item name="BloodPressure" type="id" />
+    <item name="HealthyLiving" type="id" />
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment">
+    tools:context=".HomeFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -116,9 +116,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
+            android:id="@+id/DiabetesType1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Diabetes Type 1"
+            android:text="DiabetesType1"
             android:layout_marginLeft="190dp"
             android:layout_marginTop="150dp"
             android:textStyle="normal"
@@ -139,9 +140,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/DiabetesType2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/diabetes_type_2"
+            android:text="DiabetesType2"
             android:layout_marginStart="190dp"
             android:layout_marginTop="300dp"
             android:textColor="@color/black"
@@ -202,9 +204,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
+            android:id="@+id/BloodPressure"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="blood_pressure"
+            android:text="BloodPressure"
             android:layout_marginLeft="190dp"
             android:layout_marginTop="460dp"
             android:textColor="@color/black"
@@ -226,9 +229,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/HealthyLiving"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Healthy Living"
+            android:text="HealthyLiving"
             android:layout_marginLeft="190dp"
             android:layout_marginTop="600dp"
             android:textColor="@color/black"
