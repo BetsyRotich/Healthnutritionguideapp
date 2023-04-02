@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment">
+    tools:context=".HomeFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -101,7 +101,8 @@
             android:layout_marginTop="70dp"
             android:textStyle="normal"
             android:textSize="18sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+           />
         <ImageView
             android:id="@+id/best_foods_to_control_diabetes_blood_sugarImage"
             android:layout_width="176dp"
@@ -115,14 +116,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
+            android:id="@+id/DiabetesType1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Diabetes Type 1"
+            android:text="DiabetesType1"
             android:layout_marginLeft="190dp"
             android:layout_marginTop="150dp"
             android:textStyle="normal"
             android:textSize="25sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:onClick="onDiabetesType1Click"/>
 
         <ImageView
             android:id="@+id/keto_shrimp_healthy_eating_dinner_1296x728_header_1_1200x628Image"
@@ -137,16 +140,58 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/DiabetesType2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/diabetes_type_2"
+            android:text="DiabetesType2"
             android:layout_marginStart="190dp"
             android:layout_marginTop="300dp"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="normal"
             tools:layout_editor_absoluteX="-194dp"
-            tools:layout_editor_absoluteY="164dp" />
+            tools:layout_editor_absoluteY="164dp"
+            android:onClick="onDiabetesType2Click"/>
+        <ImageView
+            android:id="@+id/optome1"
+            android:layout_width="36dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="380dp"
+            android:layout_marginTop="160dp"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_baseline_arrow_right_1"
+            tools:ignore="DuplicateIds" />
+
+
+        <ImageView
+            android:id="@+id/optome"
+            android:layout_width="36dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="380dp"
+            android:layout_marginTop="310dp"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_baseline_arrow_right" />
+        <ImageView
+            android:id="@+id/optome2"
+            android:layout_width="36dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="380dp"
+            android:layout_marginTop="470dp"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_baseline_arrow_right_2" />
+        <ImageView
+            android:id="@+id/optome3"
+            android:layout_width="36dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="380dp"
+            android:layout_marginTop="610dp"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_baseline_arrow_right_3" />
+
         <ImageView
             android:id="@+id/how_to_reduce_blood_pressure_getty_creativeImage"
             android:layout_width="176dp"
@@ -159,16 +204,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
+            android:id="@+id/BloodPressure"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="blood_pressure"
+            android:text="BloodPressure"
             android:layout_marginLeft="190dp"
             android:layout_marginTop="460dp"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="normal"
             tools:layout_editor_absoluteX="-194dp"
-            tools:layout_editor_absoluteY="164dp" />
+            tools:layout_editor_absoluteY="164dp"
+            android:onClick="onBloodPressureClick"/>
 
         <ImageView
             android:id="@+id/foundation_layersImage"
@@ -182,22 +229,25 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/HealthyLiving"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Healthy living"
-            android:autoLink="web"
-            android:onClick="clickhere"
+            android:text="HealthyLiving"
             android:layout_marginLeft="190dp"
             android:layout_marginTop="600dp"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="-194dp" />
+            tools:layout_editor_absoluteX="-194dp"
+            android:onClick="onHealthyLivingClick"/>
+
+
 
 
 
     </RelativeLayout>
+
 
 
 </RelativeLayout>

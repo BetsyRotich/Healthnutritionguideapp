@@ -1,5 +1,4 @@
 package com.example.healthnutritionguideapp
-import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,14 +6,15 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.FragmentTransaction
 import com.example.healthnutritionguideapp.fragments.DiscoverFragment
-import com.example.healthnutritionguideapp.fragments.HomeFragment
 import com.example.healthnutritionguideapp.fragments.NotificationsFragment
 import com.example.healthnutritionguideapp.fragments.ProfileFragment
+import com.example.healthnutritionguideapp.test.TestFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     //accessing the fragments
     lateinit var homeFragment: HomeFragment
+    lateinit var testFragment: TestFragment
     lateinit var discoverFragment: DiscoverFragment
     lateinit var notificationsFragment: NotificationsFragment
     lateinit var profileFragment: ProfileFragment
@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigation: BottomNavigationView = findViewById(R.id.btn_nav)
 
-        homeFragment = HomeFragment()
+       testFragment = TestFragment()
         supportFragmentManager
-            .beginTransaction().replace(R.id.frame_layout, homeFragment).setTransition(
+            .beginTransaction().replace(R.id.frame_layout, testFragment).setTransition(
                 FragmentTransaction.TRANSIT_FRAGMENT_OPEN
             ).commit()
 
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home -> {
                     homeFragment = HomeFragment()
                     supportFragmentManager
-                        .beginTransaction().replace(R.id.frame_layout, homeFragment)
+                        .beginTransaction().replace(R.id.frame_layout, testFragment)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit()
                 }
 

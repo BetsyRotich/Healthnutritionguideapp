@@ -1,0 +1,21 @@
+package com.example.healthnutritionguideapp.fragments
+import android.content.Intent
+import android.provider.CalendarContract
+import android.os.Bundle
+import android.view.View
+import androidx.fragment.app.Fragment
+class Intent : Fragment() {
+
+    // ...
+
+    fun onTextViewClick(view: View) {
+        val intent = Intent(Intent.ACTION_INSERT)
+            .setData(CalendarContract.Events.CONTENT_URI)
+            .putExtra(CalendarContract.Events.TITLE, "Health Journey Guide")
+            .putExtra(CalendarContract.Events.EVENT_LOCATION, "Event Location")
+            .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, 1)
+            .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, 40)
+        startActivity(intent)
+    }
+
+}
