@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/material_dynamic_tertiary30"
     >
 
     <ImageView
@@ -15,7 +16,7 @@
         android:layout_marginLeft="14dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/ic_baseline_arrow_back_24"
-        app:tint="@color/black">
+        app:tint="@color/material_dynamic_tertiary60">
 
     </ImageView>
 
@@ -26,8 +27,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="70dp"
         android:text="Login"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textColor="@color/purple_200"
+        android:textSize="40sp"
         android:textStyle="bold">
 
     </TextView>
@@ -44,13 +45,13 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:text="Please log in to proceed"
-            android:textSize="16sp">
+            android:textSize="20sp">
 
         </TextView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilEmail"
-            style="Healthnutritionguideapp/AppTheme.InputField"
+            style="@style/AppTheme.InputField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_one"
@@ -60,16 +61,16 @@
             android:hint=" email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmaill"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilPassword"
-            style="Healthnutritionguideapp/AppTheme.InputField"
+            style="@style/AppTheme.InputField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tilEmail"
@@ -80,11 +81,11 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPasswordd"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -103,63 +104,18 @@
         </TextView>
 
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_below="@id/text_one_remforgot"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="43dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/ic_remathree"
             android:text="Login"
             android:textAllCaps="false"
             android:textSize="16sp"
-            app:cornerRadius="6dp" />
-
-        <TextView
-            android:id="@+id/or"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btnSignIn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="12dp"
-            android:padding="10dp"
-            android:layout_marginBottom="12dp"
-            android:text="or"
-            android:textSize="18sp">
-
-        </TextView>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/loggoogle"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@id/or"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ic_remaone"
-            android:text="Continue with google"
-            android:textAllCaps="false"
-            android:textColor="@color/purple_500"
-            android:textSize="16sp"
-            app:cornerRadius="6dp" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/logfacebook"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@id/loggoogle"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ic_rematwo"
-            android:backgroundTint="#6D7FBD"
-            android:text="Continue with facebook"
-            android:textAllCaps="false"
-            android:textSize="16sp"
-            app:backgroundTint="#304387"
             app:cornerRadius="6dp" />
 
         <RelativeLayout
@@ -169,36 +125,18 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp">
 
-
-            <TextView
-                android:id="@+id/text_one_dont"
+            <Button
+                android:id="@+id/btnSignup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="10dp"
-
-                android:text="Need an Email account?"
-                android:textColor="@color/purple_500"
+                android:text="sign up"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
                 android:textSize="16sp">
 
-            </TextView>
+            </Button>
 
-            <TextView
-                android:id="@+id/text_one_donttwo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/text_one_dont"
-                android:text="Create here"
-                android:textColor="#3B5998"
-                android:textSize="16sp">
-
-            </TextView>
         </RelativeLayout>
     </RelativeLayout>
-
-
-
-
 
 </RelativeLayout>
