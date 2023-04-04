@@ -28,7 +28,7 @@ class SignupActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_signup)
         auth = FirebaseAuth.getInstance()
-        emailInput = findViewById(R.id.etEmail)
+        emailInput = findViewById(R.id.etEmaill)
         firstNameInput = findViewById(R.id.etfullname)
         lastNameInput = findViewById(R.id.etPasswordd)
         passwordInput = findViewById(R.id.etPassworddtwo)
@@ -87,12 +87,17 @@ class SignupActivity : AppCompatActivity() {
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
+                            val user = auth.currentUser
+                            val email = emailInput.text.toString()
+                            val password = passwordInput.text.toString()
                             // Sign in success, update UI with the signed-in user's information
 //                        Log.d(TAG, "createUserWithEmail:success")
 //                        val user = auth.currentUser
                             val intent = Intent(this, LoginActivity::class.java)
                             startActivity(intent)
                             finish()
+                            
+                            
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "createUserWithEmail:failure", task.exception)
@@ -109,15 +114,21 @@ class SignupActivity : AppCompatActivity() {
                     "Email and password fields cannot be empty",
                     Toast.LENGTH_SHORT
                 ).show()
-            }
-            val loginButton = findViewById<Button>(R.id.btnlogin)
 
-            loginButton.setOnClickListener {
-                val intent = Intent(this, LoginActivity::class.java)
-                startActivity(intent)
+                // Create Intent object
             }
+                val loginButton = findViewById<Button>(R.id.btnlogin)
+
+                loginButton.setOnClickListener {
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
+                }
+            // Create Intent object
+
+
         }
     }
 }
+
 
 

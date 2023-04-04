@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
         android:name="com.google.android.gms.permission.AD_ID"
@@ -12,7 +16,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/hearthealthydiet"
+        android:icon="@drawable/ic_hearthealthydiet"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Healthnutritionguideapp"
@@ -62,6 +66,63 @@
 
         <activity android:name=".FirebaseUIActivity" />
 
+        <activity
+            android:name=".BloodPressureActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DiabetesType1"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".DiabetesType2"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".HealthyLivingActivity"
+            android:exported="true">
+
+            </activity><activity
+        android:name=".test.TestActivity"
+        android:label="/Healthnutritionguideapp"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="com.example.healthnutritionguideapp.ACTION_TEST" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".test.meals.BreakFastActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".test.meals.LunchActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".test.meals.SupperActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".MealPlanActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DiscoverActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
+

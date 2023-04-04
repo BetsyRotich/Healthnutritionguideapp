@@ -8,4 +8,6 @@
     <item name="DiabetesType2" type="id" />
     <item name="BloodPressure" type="id" />
     <item name="HealthyLiving" type="id" />
+    <item name="btnUpdate" type="id" />
+    <item name="web_view" type="id" />
 </resources>
