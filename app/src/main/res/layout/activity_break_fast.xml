@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".test.meals.BreakFastActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<TextView
+    android:text="Breakfast"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/black"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:text="Food 1: Oatmeal"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:text="Ingredients:\n1 cup rolled oats\n2 cups water\nPinch of salt\n\nInstructions:\n1. Combine oats, water, and salt in a pot.\n2. Bring to a boil, then reduce heat and simmer for 10-15 minutes.\n3. Serve with your favorite toppings, such as fruit, nuts, or honey."
+    android:textSize="16sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/black"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:text="Food 2: Avocado Toast"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:text="Ingredients:\n1 avocado\n2 slices of bread\n1/2 lemon\nSalt and pepper to taste\n\nInstructions:\n1. Toast the bread.\n2. Cut the avocado in half and remove the pit.\n3. Scoop out the flesh into a bowl.\n4. Mash the avocado with a fork and add lemon juice, salt, and pepper to taste.\n5. Spread the avocado mixture on the toast."
+    android:textSize="16sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/black"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:text="Food 3: Greek Yogurt Parfait"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"/>
+
+<TextView
+    android:text="Ingredients:\n1 cup Greek yogurt\n1/2 cup granola\n1 cup mixed berries\nHoney to taste\n\nInstructions:\n1. Layer the yogurt, granola, and berries in a bowl or jar.\n2. Drizzle honey on top to taste."
+    android:textSize="16sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"/>
+
+</LinearLayout>

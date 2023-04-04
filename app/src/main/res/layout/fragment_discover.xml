@@ -1,81 +1,132 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".discoverActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-
-    <com.google.android.material.appbar.AppBarLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ndama"
-        android:background="#ffffff"
-        android:elevation="2dp">
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="60dp">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+        android:text="Discover Health Websites"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/optome"
-                    android:layout_width="36dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="14dp"
-                    android:backgroundTint="@android:color/white"
-                    android:src="@drawable/ic_baseline_arrow_back_24"
-                    app:tint="#000000" />
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/huad"
-                    style="@style/AppTheme.InputField"
-                    android:layout_width="match_parent"
-                    android:layout_toRightOf="@id/optome"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_centerInParent="true"
-                    android:hint="Search ">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Click on the links below to discover new health websites:"
+        android:textSize="16sp" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/hua"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:cursorVisible="true"
-                        android:inputType="textEnableTextConversionSuggestions"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="General Health Information"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-            </RelativeLayout>
-        </androidx.appcompat.widget.Toolbar>
-    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/webmd_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="WebMD: https://www.webmd.com/"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:onClick="openLink"
+        android:tag="https://www.webmd.com/" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:layout_below="@id/ndama">
+    <TextView
+        android:id="@+id/mayo_clinic_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mayo Clinic: https://www.mayoclinic.org/"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:onClick="openLink"
+        android:tag="https://www.mayoclinic.org/" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_search"
-            android:layout_width="match_parent"
-            android:scrollbars="horizontal"
-            android:layout_height="wrap_content"
-            android:visibility="visible"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="6dp"
-            android:layout_marginBottom="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Diet and Nutrition"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        </androidx.recyclerview.widget.RecyclerView>
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/myfitnesspal_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="MyFitnessPal : https://www.myfitnesspal.com/"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:onClick="openLink"
+        android:tag="https://www.myfitnesspal.com/" />
 
+    <TextView
+        android:id="@+id/eat_this_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Eat This, Not That! : https://www.eatthis.com/"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:onClick="openLink"
+        android:tag="https://www.eatthis.com/" />
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Different Diseases"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/ncda_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ncdalliance: https://ncdalliance.org/"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:onClick="openLink"
+        android:tag="https://ncdalliance.org/"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nutritionists"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lishe_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lishe : https://www.lisheliving.com/"
+        android:textSize="16sp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:onClick="openLink"
+        android:tag="https://www.lisheliving.com/" />
+
+</LinearLayout>
+
 

@@ -1,8 +1,8 @@
 package com.example.healthnutritionguideapp
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.FragmentTransaction
 import com.example.healthnutritionguideapp.fragments.DiscoverFragment

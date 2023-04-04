@@ -8,17 +8,6 @@
     android:background="@color/material_dynamic_tertiary30"
     >
 
-    <ImageView
-        android:id="@+id/mano"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_baseline_arrow_back_24"
-        app:tint="@color/purple_500">
-
-    </ImageView>
-
     <TextView
         android:id="@+id/welcome_t"
         android:layout_width="wrap_content"
@@ -26,8 +15,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:text="Sign up"
-        android:textColor="@color/purple_200"
-        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         android:textStyle="bold">
 
     </TextView>
@@ -61,11 +50,11 @@
             android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmail"
+                android:id="@+id/etEmaill"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -84,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -103,7 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -123,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -143,7 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -161,6 +150,7 @@
             android:textAllCaps="false"
             android:textSize="16sp"
             app:cornerRadius="8dp" />
+
 
 
         <RelativeLayout
@@ -188,13 +178,17 @@
                 android:id="@+id/btnlogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/text_one_dont"
                 android:text="login"
-                android:textColor="@color/black"
+                android:textColor="@color/purple_500"
                 android:textSize="16sp">
 
             </Button>
         </RelativeLayout>
     </RelativeLayout>
+
+
+
 
 </RelativeLayout>

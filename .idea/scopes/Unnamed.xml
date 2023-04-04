@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Unnamed" pattern="ext:*||file[Healthnutritionguideapp*]:*//*||file[Healthnutritionguideapp.app.unitTest]:*/||file[Healthnutritionguideapp.app]:*/||file[Healthnutritionguideapp]:*/||ext:*/" />
+</component>

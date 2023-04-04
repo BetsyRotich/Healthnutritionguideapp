@@ -2,13 +2,11 @@ package com.example.healthnutritionguideapp.test
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.Layout
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import android.widget.TextView
+import androidx.fragment.app.Fragment
 import com.example.healthnutritionguideapp.R
 
 class TestFragment : Fragment() {
@@ -23,11 +21,19 @@ class TestFragment : Fragment() {
 
         val diabetesType1 = view.findViewById<LinearLayout>(R.id.testone)
         val diabetesType2 = view.findViewById<LinearLayout>(R.id.testtwo)
+        val bloodPressure = view.findViewById<LinearLayout>(R.id.testthree)
+        val healthyLiving = view.findViewById<LinearLayout>(R.id.testfour)
 
         diabetesType1.setOnClickListener {
             startActivity(Intent(context,TestActivity::class.java))
         }
         diabetesType2.setOnClickListener {
+            startActivity(Intent(context,TestActivity::class.java))
+        }
+        bloodPressure.setOnClickListener {
+            startActivity(Intent(context,TestActivity::class.java))
+        }
+        healthyLiving.setOnClickListener {
             startActivity(Intent(context,TestActivity::class.java))
         }
 

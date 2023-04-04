@@ -9,5 +9,9 @@
     <string name="todo">TODO</string>
     <string name="diabetes_type_1" />
     <string name="diabetes_type_2">Diabetes Type 2</string>
+    <string name="bmi_result">BMI: %.2f</string>
+    <string name="hyperlink">Get more assistance at\n<a href="https://nutrition.extension.oregonstate.edu/healthy-eating-links">HealthyEating.com</a></string>
+
+
 
 </resources>

@@ -203,6 +203,7 @@
             android:src="@drawable/how_to_reduce_blood_pressure_getty_creative"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/BloodPressure"
             android:layout_width="match_parent"
